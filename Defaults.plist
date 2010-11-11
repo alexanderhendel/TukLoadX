@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>InstallIngameConfig</key>
+	<true/>
+	<key>InstallClassTimer</key>
+	<true/>
+	<key>WoWBasePath</key>
+	<string>/Applications/WoW</string>
+	<key>CleanInstall</key>
+	<false/>
+	<key>OverrideConfig</key>
+	<false/>
+	<key>BackupPrevious</key>
+	<true/>
+</dict>
+</plist>
