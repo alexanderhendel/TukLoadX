@@ -22,6 +22,9 @@
 {
 	if ([super init])
 	{
+		//NSLog to file for debugging
+		[self redirectNSLog];
+		
 		// user prefs
 		preferences = [[NSUserDefaults standardUserDefaults] retain];
 		NSString *file = [[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"];
@@ -349,6 +352,36 @@
 	NSLog(@"Handle Notification: BBADownloadDidAdvanceNotification");
 	
 	[progressBar setDoubleValue:[gitUtils downloadPercentComplete]];
+}
+
+- (BOOL)redirectNSLog
+{
+	// Create log file
+	NSString *logDir = NSHomeDirectory();
+	NSString *logFile = [logDir stringByAppendingString:@"/tukloadx.log"];
+	
+	[@"" writeToFile:logFile atomically:YES encoding:NSUTF8StringEncoding error:nil];
+	
+	id fileHandle = [NSFileHandle fileHandleForWritingAtPath:logFile];
+
+	if (!fileHandle) {
+		return NSLog(@"Opening log failed"), NO;
+	}
+	[fileHandle retain];
+	
+	// Redirect stderr
+	int err = dup2([fileHandle fileDescriptor], STDERR_FILENO);
+	if (!err) {
+		return	NSLog(@"Couldn't redirect stderr"), NO;
+	}
+	
+	// Redirect stdout
+	int sout = dup2([fileHandle fileDescriptor], STDOUT_FILENO);
+	if (!sout) {
+		return	NSLog(@"Couldn't redirect stdout"), NO;
+	}
+	
+	return YES;
 }
 
 @end

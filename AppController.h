@@ -21,7 +21,7 @@
 #define GIT_USER_CONFI @"tukz"
 
 #define CONFIG_PATH_TUKUI @"/Downloads/tukui_dl.zip"
-#define CONFIG_PATH_TIMER @"/Downloads/tukui_classtiemer_dl.zip"
+#define CONFIG_PATH_TIMER @"/Downloads/tukui_classtimer_dl.zip"
 #define CONFIG_PATH_CONFI @"/Downloads/tukui_ingamecfg_dl.zip"
 
 #define WOW_APP_NAME @"World of Warcraft.app"
@@ -60,6 +60,7 @@
 - (IBAction)installTukUI:(id)sender;
 
 - (void)checkVersions;
+- (BOOL)redirectNSLog;
 
 // property list
 @property (nonatomic, retain) BBAWoWAddOnInstaller *installer;
