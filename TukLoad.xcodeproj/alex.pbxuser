@@ -195,6 +195,13 @@
 			FAC567FD128D8E92000003ED /* PBXTextBookmark */ = FAC567FD128D8E92000003ED /* PBXTextBookmark */;
 			FAC567FF128D8F10000003ED /* PBXTextBookmark */ = FAC567FF128D8F10000003ED /* PBXTextBookmark */;
 			FAC56802128D8F31000003ED /* PBXTextBookmark */ = FAC56802128D8F31000003ED /* PBXTextBookmark */;
+			FAC56806128DA4B0000003ED /* XCBuildMessageTextBookmark */ = FAC56806128DA4B0000003ED /* XCBuildMessageTextBookmark */;
+			FAC56807128DA4B0000003ED /* PBXTextBookmark */ = FAC56807128DA4B0000003ED /* PBXTextBookmark */;
+			FAC56808128DA503000003ED /* PlistBookmark */ = FAC56808128DA503000003ED /* PlistBookmark */;
+			FAC56809128DA503000003ED /* PBXTextBookmark */ = FAC56809128DA503000003ED /* PBXTextBookmark */;
+			FAC5680A128DA503000003ED /* PBXTextBookmark */ = FAC5680A128DA503000003ED /* PBXTextBookmark */;
+			FAC5680B128DA503000003ED /* PBXTextBookmark */ = FAC5680B128DA503000003ED /* PBXTextBookmark */;
+			FAC5680C128DA503000003ED /* PBXTextBookmark */ = FAC5680C128DA503000003ED /* PBXTextBookmark */;
 			FAC5C4141289BF7200481A5E = FAC5C4141289BF7200481A5E /* PBXTextBookmark */;
 			FAC5C4151289BF7200481A5E = FAC5C4151289BF7200481A5E /* PBXTextBookmark */;
 			FAC5C4211289BFC200481A5E = FAC5C4211289BFC200481A5E /* PBXTextBookmark */;
@@ -308,7 +315,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 343";
 		rLen = 0;
-		rLoc = 9818;
+		rLoc = 9856;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 7436;
@@ -585,7 +592,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 360";
 		rLen = 0;
-		rLoc = 10076;
+		rLoc = 10114;
 		rType = 0;
 		vrLen = 661;
 		vrLoc = 9746;
@@ -595,7 +602,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 357";
 		rLen = 21;
-		rLoc = 10021;
+		rLoc = 10059;
 		rType = 0;
 		vrLen = 944;
 		vrLoc = 9605;
@@ -735,7 +742,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 360";
 		rLen = 0;
-		rLoc = 10102;
+		rLoc = 10140;
 		rType = 0;
 		vrLen = 960;
 		vrLoc = 9543;
@@ -745,7 +752,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 328";
 		rLen = 0;
-		rLoc = 9211;
+		rLoc = 9249;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 8651;
@@ -805,7 +812,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 376";
 		rLen = 0;
-		rLoc = 10717;
+		rLoc = 10755;
 		rType = 0;
 		vrLen = 838;
 		vrLoc = 9753;
@@ -815,7 +822,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 381";
 		rLen = 0;
-		rLoc = 10707;
+		rLoc = 10745;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 9881;
@@ -825,7 +832,7 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 384";
 		rLen = 0;
-		rLoc = 10728;
+		rLoc = 10766;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 9881;
@@ -835,10 +842,80 @@
 		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
 		name = "AppController.m: 384";
 		rLen = 0;
-		rLoc = 10728;
+		rLoc = 10766;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 9881;
+	};
+	FAC56806128DA4B0000003ED /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Called object '9' is not a function";
+		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 359;
+		rType = 1;
+	};
+	FAC56807128DA4B0000003ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
+		name = "AppController.m: 360";
+		rLen = 0;
+		rLoc = 10140;
+		rType = 0;
+		vrLen = 618;
+		vrLoc = 9950;
+	};
+	FAC56808128DA503000003ED /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* TukLoad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/alex/Documents/CocoaApps/TukLoadX/TukLoad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	FAC56809128DA503000003ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAA3EE201271E41F00A17A6D /* BBAGitRepository.m */;
+		name = "BBAGitRepository.m: 117";
+		rLen = 0;
+		rLoc = 2811;
+		rType = 0;
+		vrLen = 672;
+		vrLoc = 53;
+	};
+	FAC5680A128DA503000003ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAA3EE231271F2A800A17A6D /* BBATukui.m */;
+		name = "BBATukui.m: 34";
+		rLen = 20;
+		rLoc = 496;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 77;
+	};
+	FAC5680B128DA503000003ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
+		name = "AppController.m: 308";
+		rLen = 0;
+		rLoc = 8572;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 7870;
+	};
+	FAC5680C128DA503000003ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAEFC2591255D4D700D9FB27 /* AppController.m */;
+		name = "AppController.m: 308";
+		rLen = 0;
+		rLoc = 8572;
+		rType = 0;
+		vrLen = 1306;
+		vrLoc = 7873;
 	};
 	FAC5C4141289BF7200481A5E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -929,10 +1006,10 @@
 	};
 	FAEFC2591255D4D700D9FB27 /* AppController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2576, 267}\";\n            s = 0;\n        },\n                {\n            r = \"{2893, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{3008, 1012}\";\n            s = 0;\n        },\n                {\n            r = \"{4065, 24}\";\n            s = 0;\n        },\n                {\n            r = \"{5043, 25}\";\n            s = 0;\n        },\n                {\n            r = \"{5791, 458}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 10741}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {952, 4186}}";
-			sepNavSelRange = "{8888, 0}";
-			sepNavVisRange = "{8041, 860}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2576, 267}\";\n            s = 0;\n        },\n                {\n            r = \"{2893, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{3008, 1012}\";\n            s = 0;\n        },\n                {\n            r = \"{4065, 24}\";\n            s = 0;\n        },\n                {\n            r = \"{5043, 25}\";\n            s = 0;\n        },\n                {\n            r = \"{5791, 458}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 10778}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {952, 4082}}";
+			sepNavSelRange = "{6732, 0}";
+			sepNavVisRange = "{6033, 1306}";
 			sepNavWindowFrame = "{{42, 52}, {1239, 824}}";
 		};
 	};

@@ -305,7 +305,7 @@
 		}
 	} else {
 		//if not a clean install
-		if ([preferences boolForKey:@"OverrideConfig"] == YES) {
+		if (([preferences boolForKey:@"OverrideConfig"] == YES) || ([tukui installedVersion] == nil)){
 			// config can be wiped
 			[installer installAddOnFromZipFile:[tukui filename] :@"Tukui"];
 		} else {

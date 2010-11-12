@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -319,8 +321,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -338,7 +338,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FAC56802128D8F31000003ED</string>
+										<string>FAC5680C128DA503000003ED</string>
 										<key>history</key>
 										<array>
 											<string>FA4FD6C2125F46F300BFEAFE</string>
@@ -349,19 +349,19 @@
 											<string>FAC5C4141289BF7200481A5E</string>
 											<string>FAC5C4221289BFC200481A5E</string>
 											<string>FAC5C4231289BFC200481A5E</string>
-											<string>FAC567B6128D8796000003ED</string>
 											<string>FAC567E2128D8C79000003ED</string>
 											<string>FAC567E3128D8C79000003ED</string>
 											<string>FAC567E6128D8C79000003ED</string>
 											<string>FAC567E7128D8C79000003ED</string>
-											<string>FAC567E8128D8C79000003ED</string>
 											<string>FAC567E9128D8C79000003ED</string>
 											<string>FAC567F7128D8E92000003ED</string>
 											<string>FAC567F8128D8E92000003ED</string>
 											<string>FAC567F9128D8E92000003ED</string>
-											<string>FAC567FA128D8E92000003ED</string>
 											<string>FAC567FB128D8E92000003ED</string>
-											<string>FAC567FC128D8E92000003ED</string>
+											<string>FAC56808128DA503000003ED</string>
+											<string>FAC56809128DA503000003ED</string>
+											<string>FAC5680A128DA503000003ED</string>
+											<string>FAC5680B128DA503000003ED</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -559,12 +559,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>FAC56803128D8F31000003ED</string>
 		<string>FAC567BD128D8796000003ED</string>
 		<string>FAC567BE128D8796000003ED</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>FA248E371250FD8700F45CBD</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/alex/Documents/CocoaApps/TukLoadX/TukLoad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -949,7 +948,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
