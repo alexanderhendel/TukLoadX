@@ -58,6 +58,8 @@
 - (IBAction)backupInterface:(id)sender;
 - (IBAction)backupTukUI:(id)sender;
 - (IBAction)installTukUI:(id)sender;
+- (IBAction)launchWoW:(id)sender;
+- (IBAction)findWoW:(id)sender;
 
 - (void)checkVersions;
 - (BOOL)redirectNSLog;

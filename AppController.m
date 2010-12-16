@@ -264,6 +264,20 @@
 	// wait for download finished notification
 }
 
+- (IBAction)launchWoW:(id)sender
+{
+	//does what it says
+	[[NSWorkspace sharedWorkspace] launchApplication:@"World of Warcraft"];
+	
+	//terminate tukloadx
+	[[NSApplication sharedApplication] terminate:self];
+}
+
+- (IBAction)findWoW:(id)sender
+{
+	[preferences setObject:[[[NSWorkspace sharedWorkspace] fullPathForApplication:@"World of Warcraft"] stringByDeletingLastPathComponent] forKey:@"WoWBasePath"]; 
+}
+
 - (void)sheetDidEnd:(NSWindow *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
 	//end sheets
