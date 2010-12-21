@@ -77,13 +77,37 @@ NSString* const BBARemotVersionCheckedNotification = @"BBARemotVersionChecked";
 	return downloadPage;
 }
 
+- (NSString*) getDownloadPageForRepositoryFile
+{
+	NSString* downloadPage;
+	
+	downloadPage = [[[[@"http://github.com/" stringByAppendingString:[self repositoryowner]] 
+											 stringByAppendingString:@"/"]  
+											 stringByAppendingString:[self repository]] 
+											 stringByAppendingString:@"/blob/master"];
+	
+	return downloadPage;
+}
+
+//get latest version from github download page
 - (void) getLatestVersionOfRepository
 {	
-	//get latest version from github download page
 	gitResponseData = [[NSMutableData data] retain];
     gitBaseURL = [[NSURL URLWithString:[self getDownloadPageForRepository]] retain];
 	
+	NSLog(@"BBAGitRepository.m: Connection attempt to: @%", [self getDownloadPageForRepository]);
+	
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[self getDownloadPageForRepository]]];
+    [[[NSURLConnection alloc] initWithRequest:request delegate:self] autorelease];
+}
+
+// get latest version of repo based on filecontent
+- (void) getLatestVersionOfRepositoryFromHostedFile:(NSString *)fileURL
+{
+	gitResponseData = [[NSMutableData data] retain];
+    gitBaseURL = [[NSURL URLWithString:[[self getDownloadPageForRepositoryFile] stringByAppendingString:fileURL]] retain];
+	
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[[self getDownloadPageForRepositoryFile] stringByAppendingString:fileURL]]];
     [[[NSURLConnection alloc] initWithRequest:request delegate:self] autorelease];
 }
 

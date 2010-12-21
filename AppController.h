@@ -12,11 +12,12 @@
 #import "BBAGitRepository.h"
 #import "BBATukui.h"
 #import "BBATukuiConfig.h"
+#import "BBATukuiClassTimer.h"
 
 #define GIT_REPO_TUKUI @"Tukui"
 #define GIT_USER_TUKUI @"tukz"
 #define GIT_REPO_TIMER @"Tukui_ClassTimer"
-#define GIT_USER_TIMER @"shadowphoenix"
+#define GIT_USER_TIMER @"Toresh"
 #define GIT_REPO_CONFI @"Tukui_ConfigUI"
 #define GIT_USER_CONFI @"tukz"
 
@@ -42,6 +43,7 @@
 	// addons
 	BBATukui* tukui;
 	BBATukuiConfig* tukuiConfig;
+	BBATukuiClassTimer* tukuiCTimer;
 
 	// Outlets
 	IBOutlet id mainWindow;
@@ -72,6 +74,7 @@
 @property (nonatomic, retain) BBAGitRepository* gitRepoTukuiClassTimer;
 @property (nonatomic, retain) BBATukui* tukui;
 @property (nonatomic, retain) BBATukuiConfig* tukuiConfig;
+@property (nonatomic, retain) BBATukuiClassTimer* tukuiCTimer;
 
 
 @end

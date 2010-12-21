@@ -17,6 +17,7 @@
 @synthesize gitRepoTukuiClassTimer;
 @synthesize tukui;
 @synthesize tukuiConfig;
+@synthesize tukuiCTimer;
 
 -(id)init
 {
@@ -43,6 +44,7 @@
 		
 		tukui = [[BBATukui alloc] init];
 		tukuiConfig = [[BBATukuiConfig alloc] init];
+		tukuiCTimer = [[BBATukuiClassTimer alloc] init];
 		
 		// register for notifications
 		NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
@@ -82,6 +84,7 @@
 	[gitRepoTukuiClassTimer dealloc];
 	[tukui dealloc];
 	[tukuiConfig dealloc];
+	[tukuiCTimer dealloc];
 	
 	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 	[nc removeObserver:self];
@@ -175,6 +178,13 @@
 		[gitRepoTukuiConfig getLatestVersionOfRepository];
 		NSLog(@"AppController.m: TukUI Config Version Available: %@",[gitRepoTukuiConfig repositoryversion]);
 	}
+	
+	// Get Repository Version of Tukui Class Timer
+	if ([preferences boolForKey:@"InstallClassTimer"] == YES)
+	{
+		[gitRepoTukuiClassTimer getLatestVersionOfRepository];
+		NSLog(@"AppController.m: TukUI Class Timer Version Available: %@",[gitRepoTukuiClassTimer repositoryversion]);
+	}
 }
 
 - (void) awakeFromNib 
@@ -245,6 +255,12 @@
 		{
 			[tukuiConfig setFilename:[gitUtils downloadLatestVersionOfRepository:gitRepoTukuiConfig]];
 		}
+		
+		// if requested also process class timer
+		if ([preferences boolForKey:@"InstallClassTimer"] == YES)
+		{
+			[tukuiCTimer setFilename:[gitUtils downloadLatestVersionOfRepository:gitRepoTukuiClassTimer]];
+		}
 	} else {
 		// versions not checked do it first
 		[self checkVersions];
@@ -256,6 +272,12 @@
 		if ([preferences boolForKey:@"InstallIngameConfig"] == YES)
 		{
 			[tukuiConfig setFilename:[gitUtils downloadLatestVersionOfRepository:gitRepoTukuiConfig]];
+		}
+		
+		// if requested also process class timer
+		if ([preferences boolForKey:@"InstallClassTimer"] == YES)
+		{
+			[tukuiCTimer setFilename:[gitUtils downloadLatestVersionOfRepository:gitRepoTukuiClassTimer]];
 		}
 	}
 	
@@ -317,6 +339,13 @@
 			[installer cleanAddon:@"Tukui_ConfigUI"];
 			[installer installAddOnFromZipFile:[tukuiConfig filename] :@"Tukui_ConfigUI"];
 		}
+		
+		// if requested also process class timer
+		if ([preferences boolForKey:@"InstallClassTimer"] == YES)
+		{
+			[installer cleanAddon:@"Tukui_ClassTimer"];
+			[installer installAddOnFromZipFile:[tukuiCTimer filename] :@"Tukui_ClassTimer"];
+		}
 	} else {
 		//if not a clean install
 		if (([preferences boolForKey:@"OverrideConfig"] == YES) || ([tukui installedVersion] == nil)){
@@ -331,6 +360,12 @@
 		if ([preferences boolForKey:@"InstallIngameConfig"] == YES)
 		{
 			[installer installAddOnFromZipFile:[tukuiConfig filename] :@"Tukui_ConfigUI"];
+		}
+		
+		// if requested also process class timer - no need to take care of the config.lua
+		if ([preferences boolForKey:@"InstallClassTimer"] == YES)
+		{
+			[installer installAddOnFromZipFile:[tukuiCTimer filename] :@"Tukui_ClassTimer"];
 		}
 	}
 	

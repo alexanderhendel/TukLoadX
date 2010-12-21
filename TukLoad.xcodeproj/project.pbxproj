@@ -12,6 +12,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		FA4E7C2D12BF6518009B4263 /* BBATukuiClassTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E7C2C12BF6518009B4263 /* BBATukuiClassTimer.m */; };
 		FA4FD6EC125F4CAF00BFEAFE /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4FD6EB125F4CAF00BFEAFE /* Defaults.plist */; };
 		FA611E811274253600C8B458 /* BBATukuiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FA611E801274253600C8B458 /* BBATukuiConfig.m */; };
 		FA73A1A21273024E002A8A22 /* TukLoadX.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA73A1A11273024E002A8A22 /* TukLoadX.icns */; };
@@ -38,6 +39,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* TukLoad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TukLoad-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TukLoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TukLoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4E7C2B12BF6518009B4263 /* BBATukuiClassTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBATukuiClassTimer.h; sourceTree = "<group>"; };
+		FA4E7C2C12BF6518009B4263 /* BBATukuiClassTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBATukuiClassTimer.m; sourceTree = "<group>"; };
 		FA4FD6EB125F4CAF00BFEAFE /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		FA611E7F1274253600C8B458 /* BBATukuiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBATukuiConfig.h; sourceTree = "<group>"; };
 		FA611E801274253600C8B458 /* BBATukuiConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBATukuiConfig.m; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				FAA3EE231271F2A800A17A6D /* BBATukui.m */,
 				FA611E7F1274253600C8B458 /* BBATukuiConfig.h */,
 				FA611E801274253600C8B458 /* BBATukuiConfig.m */,
+				FA4E7C2B12BF6518009B4263 /* BBATukuiClassTimer.h */,
+				FA4E7C2C12BF6518009B4263 /* BBATukuiClassTimer.m */,
 			);
 			name = AddOns;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				FAA3EE211271E41F00A17A6D /* BBAGitRepository.m in Sources */,
 				FAA3EE241271F2A800A17A6D /* BBATukui.m in Sources */,
 				FA611E811274253600C8B458 /* BBATukuiConfig.m in Sources */,
+				FA4E7C2D12BF6518009B4263 /* BBATukuiClassTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

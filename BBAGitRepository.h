@@ -25,7 +25,9 @@ extern NSString* const BBARemotVersionCheckedNotification;
 
 - (id)initWithRepository:(NSString*)reponame :(NSString*)repoowner;
 - (void) getLatestVersionOfRepository;
+- (void) getLatestVersionOfRepositoryFromHostedFile:(NSString *)fileURL;
 - (NSString*) getDownloadPageForRepository;
+- (NSString*) getDownloadPageForRepositoryFile;
 - (NSString*) downloadLinkForLatestVersion;
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;

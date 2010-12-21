@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="799"/>
+			<integer value="649"/>
 			<integer value="372"/>
 			<integer value="57"/>
 		</object>
@@ -895,12 +895,12 @@
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<object class="NSButton" id="398836655">
 											<reference key="NSNextResponder" ref="701511676"/>
-											<int key="NSvFlags">-2147483380</int>
+											<int key="NSvFlags">268</int>
 											<string key="NSFrame">{{16, 32}, {299, 18}}</string>
 											<reference key="NSSuperview" ref="701511676"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="58544003">
-												<int key="NSCellFlags">-1543373312</int>
+												<int key="NSCellFlags">-2080244224</int>
 												<int key="NSCellFlags2">0</int>
 												<string key="NSContents">Install TukUI Class Timer AddOn</string>
 												<reference key="NSSupport" ref="180214500"/>
@@ -927,7 +927,7 @@
 											<reference key="NSSuperview" ref="701511676"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="192207986">
-												<int key="NSCellFlags">-1543373312</int>
+												<int key="NSCellFlags">-2080244224</int>
 												<int key="NSCellFlags2">0</int>
 												<string key="NSContents">Install TukUI Ingame Configuration</string>
 												<reference key="NSSupport" ref="180214500"/>
@@ -2558,9 +2558,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{457, 372}, {439, 322}}</string>
+					<string>{{441, 401}, {439, 322}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{457, 372}, {439, 322}}</string>
+					<string>{{441, 401}, {439, 322}}</string>
 					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
